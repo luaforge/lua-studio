@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Lua Studio</title>
+	<style type="text/css">
+		.style1
+		{
+			width: 100%;
+			padding-right: 12px;
+		}
+		.style2
+		{
+			width: 100px;
+			padding-right: 15px;
+		}
+		.style3
+		{
+			width: 45%;
+			padding-right: 12px;
+			vertical-align: top;
+		}
+		a
+		{
+			color: #99CCFF;
+		}
+		h3
+		{
+			font-family: Verdana, Sans-Serif;
+			font-size: medium;
+			font-weight: bold;
+			color: #99CCFF;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		p
+		{
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body style="color: #FFFFFF; background-color: #354a83">
+
+<h2>Welcome to Lua Studio</h2>
+
+	<table class="style1">
+		<tr>
+			<td class="style2" valign="top">
+				<br />
+				<a href="">Download</a>
+				<br /><br />
+				<a href="shot-1.png">Screenshot</a>
+				<br /><br />
+				<a href="http://luaforge.net/forum/?group_id=384">Forum</a>
+				<br /><br />
+				<br /><br />
+				<small>
+				26-May-2008<br />
+				<a href="mailto:michal_kowalski at hotmail dot com">Michal Kowalski</a>
+				</small>
+			</td>
+			<td class="style3">
+				<h3>Lua Studio</h3>
+				<p>Lua Studio is a simple IDE for scripting language Lua, including syntax coloring editor and an integrated debugger.</p>
+				<h3>Installation</h3>
+				<p>Copy binaries to any folder, for instance &ldquo;c:\Program Files\LuaStudio&rdquo;. Click on the LuaStudio.exe to launch IDE.</p>
+				<p>If you don't have Visual Studio 2008 installed, you may need to download
+				<a href= http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF&displaylang=en">
+				Visual C++ 2008 Redistributable Package</a> from Microsoft's web site (C run-time libs, and more; it's a small package, below 2 MB in size).</p>
+				<h3>Running Lua Program</h3>
+				<p>When LuaStudio is up and running you can either start typing your new program, or load an existing one.
+				When it's ready, click &ldquo;Parse Document&rdquo; icon or press F7. If there are syntactic errors status bar
+				will show error message, and red marker will show up in the line containing the error. Fix it and press F7 again.
+				Now your debugger session is open.</p>
+				<h3>Debugging Lua Program</h3>
+				<p>Each time F7 is pressed to parse current document, new Lua environment is initialized, and your program is loaded.
+				It can be run by pressing F5, or traced step by step with Step Into (F11), Step Over (F10), or Step Out (Ctrl+F11).
+				To toggle a breakpoint, press F9. When Lua program is running, its execution can be interrupted by pressing Ctrl+Break.</p>
+				<p>To inspect currently used variables, one can use local and global variables windows. Call stack shows active function calls.</p>
+				<p>To see program's output, please use In/Out Window (Alt+5).</p>
+				<a href="shot-1.png"><img src="shot-1-small.png" width="394px" height="336px" alt="screen shot"/></a>
+			</td>
+			<td class="style3">
+				<h3>Build Lua Studio</h3>
+				<p>To build Lua Studio you will need VS 2008 IDE and Lua Studio sources available at the LuaForge CVS repository.</p>
+				<p>Source files include IDE sources, Lua 5.1.3, Lua File System lib (lfs), Scintilla (text editor), and Scintilla MFC wrapper.
+				</p>
+				<p>After opening solution file, simply build either Release or Debug configuration, and look for built executable
+				inside Release or Debug folder respectively.</p>
+
+				<h3>Limitations</h3>
+				<p>This project is in alpha state (not feature complete). As such it is usable, but it has several limitations.
+				In particular:</p>
+				<ul>
+					<li>There are no options to configure yet (editor font, colors, etc.)</li>
+					<li>Local and global variables windows do not let you modify any values</li>
+					<li>Call stack does not allow activating different frames</li>
+					<li>Breakpoints are wiped out any time parsing is done</li>
+					<li>Breakpoints are accepted in any line, even when it has no code (but they won't be hit there)</li>
+					<li>Editing program while it is being executed messes up breakpoint and current line markers (press F7 to reparse your program)</li>
+					<li>Output window is very simple (not a real terminal window) and quite slow</li>
+					<li>In/Out Window only functions in the output mode, and lacks configuration</li>
+				</ul>
+
+				<h3>Technical Notes</h3>
+				<p>LuaStudio is written in C++ using MFC. The reason why MFC has been used, is simply due to the fact that I ressurected
+				my old 6502 simulator program, instead of writing everything from scratch.</p>
+				<p>Lua binaries and lfs (Lua file system) have been both compiled as DLLs. In theory that allows using any
+				Lua library, as long as it is compiled in VC 2008, with the same compiler settings.</p>
+			</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
