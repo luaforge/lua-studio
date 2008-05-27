@@ -1,0 +1,1363 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#elif !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE LANG_POLISH, SUBLANG_DEFAULT\r\n"
+    "#pragma code_page(1250)\r\n"
+    "#endif\r\n"
+    "#include ""res\\afxresPl.rc""    // Standard components\r\n"
+    "#include ""res\\afxprintPl.rc""  // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "#if defined(APP_LUA)\r\n"
+    "#include ""res\\LuaResources.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CODE                BITMAP                  "res\\code.bmp"
+IDB_DEBUG               BITMAP                  "res\\debug.bmp"
+IDB_ABOUT               BITMAP                  "res\\about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\lua-studio.ico"
+IDR_LUA_CODE_TYPE       ICON                    "res\\lua-code.ico"
+IDR_LUA_SRC_TYPE        ICON                    "res\\lua-source-file.ico"
+IDR_IDENT_INFO          ICON                    "res\\ident_info.ico"
+IDI_MEMORY_INFO         ICON                    "res\\memory_info.ico"
+IDI_IO_WINDOW           ICON                    "res\\io_window.ico"
+IDI_ARROW               ICON                    "res\\arrow.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MARGIN_ICONS        BITMAP                  "res\\mg_icons.bmp"
+IDB_CLOSE_TB            BITMAP                  "res\\close_tb.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Load code...\tCtrl+L",       ID_FILE_OPEN_CODE
+        MENUITEM "Sa&ve code...\tCtrl+K",       ID_FILE_SAVE_CODE
+        MENUITEM SEPARATOR
+        MENUITEM "Page set&up...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Disassembler\tAlt+0",        ID_VIEW_DEASM
+        MENUITEM SEPARATOR
+        MENUITEM "&Value Stack\tAlt+1",			ID_VIEW_REGISTERBAR
+        MENUITEM "&Global Variables\tAlt+2",    ID_VIEW_GLOBAL_VARS
+        MENUITEM "&Local Variables\tAlt+3",     ID_VIEW_LOCAL_VARS
+        MENUITEM "&Call Stack\tAlt+4",          ID_VIEW_STACK
+        MENUITEM "I&nput/Output\tAlt+5",        ID_VIEW_IO_WINDOW
+        MENUITEM "&Identifiers\tAlt+6",         ID_VIEW_IDENT
+        MENUITEM "Command Log\tAlt+7",          ID_VIEW_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "St&atusbar",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Simulator"
+    BEGIN
+        MENUITEM "&Debugger\tF6",               ID_SIM_DEBUG
+        MENUITEM SEPARATOR
+        MENUITEM "&Run\tF5",                    ID_SIM_GO
+        MENUITEM "R&estart Program\tCtrl+Shift+F5", ID_SIM_RESTART
+        MENUITEM "&Break\tCtrl+Break",          ID_SIM_BREAK
+        MENUITEM SEPARATOR
+        MENUITEM "&Step Into\tF11",             ID_SIM_STEP_INTO
+        MENUITEM "Step O&ver\tF10",             ID_SIM_STEP_OVER
+        MENUITEM "Step &Out\tCtrl+F11",         ID_SIM_GO_RTS
+        MENUITEM "Run to &Cursor\tCtrl+F10",    ID_SIM_GO_TO_CURSOR
+        MENUITEM SEPARATOR
+        MENUITEM "Toggle Breakpoint\tF9",       ID_SIM_BREAKPOINT
+        MENUITEM "Br&eakpoint Params...\tAlt+F9", ID_SIM_EDIT_BREAKPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...\tCtrl+E",         ID_SIM_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "Tile &Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "&Tile Vertically",            ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   ID_HELP_FINDER
+        MENUITEM "&Dynamic Help\tCtrl+F1",      ID_HELP_DYNAMIC
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+IDR_LUA_SRC_TYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close\tCtrl+W",              ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Load code...\tCtrl+L",       ID_FILE_OPEN_CODE
+        MENUITEM "Sa&ve code...\tCtrl+K",       ID_FILE_SAVE_CODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Previe&w",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page Set&up...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM "Select A&ll\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Toggle Bookmark\tCtrl+F2",   ID_EDIT_TOGGLE_BOOKMARK
+        MENUITEM "&Go To Bookmark\tF2",         ID_EDIT_GOTO_NEXT_BOOKMARK
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tCtrl+G",          ID_EDIT_REPEAT
+        MENUITEM "&Replace...\tCtrl+R",         ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        POPUP "&Advanced"
+        BEGIN
+            MENUITEM "&Indent Selection\tTab",      ID_EDIT_TAB
+            MENUITEM "&Outdent Selection\tShift+Tab", ID_EDIT_UNTAB
+            MENUITEM "&View Whitespace\tAlt+Ins",   ID_EDIT_VIEW_TABS
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Value Stack\tAlt+1",			ID_VIEW_REGISTERBAR
+        MENUITEM "&Global Variables\tAlt+2",    ID_VIEW_GLOBAL_VARS
+        MENUITEM "&Local Variables\tAlt+3",     ID_VIEW_LOCAL_VARS
+        MENUITEM "&Call Stack\tAlt+4",          ID_VIEW_STACK
+        MENUITEM "I&nput/Output\tAlt+5",        ID_VIEW_IO_WINDOW
+        MENUITEM "&Identifiers\tAlt+6",         ID_VIEW_IDENT
+        MENUITEM "Command Log\tAlt+7",          ID_VIEW_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "Lu&a Generated Code\tAlt+0",			ID_VIEW_DEASM
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "St&atusbar",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Simulator"
+    BEGIN
+        MENUITEM "&Parse Lua Program\tF7",      ID_SIM_ASSEMBLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Debugger\tF6",               ID_SIM_DEBUG
+        MENUITEM SEPARATOR
+        MENUITEM "&Run\tF5",                    ID_SIM_GO
+        MENUITEM "R&estart Program\tCtrl+Shift+F5", ID_SIM_RESTART
+        MENUITEM "&Break\tCtrl+Break",          ID_SIM_BREAK
+        MENUITEM SEPARATOR
+        MENUITEM "&Step Into\tF11",             ID_SIM_STEP_INTO
+        MENUITEM "Step O&ver\tF10",             ID_SIM_STEP_OVER
+        MENUITEM "Step &Out\tCtrl+F11",         ID_SIM_GO_RTS
+        MENUITEM "Run to &Cursor\tCtrl+F10",    ID_SIM_GO_TO_CURSOR
+        MENUITEM SEPARATOR
+        MENUITEM "Toggle Breakpoint\tF9",       ID_SIM_BREAKPOINT
+        MENUITEM "Br&eakpoint Params...\tAlt+F9", ID_SIM_EDIT_BREAKPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...\tCtrl+E",         ID_SIM_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "Tile &Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "&Tile Vertically",            ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   ID_HELP_FINDER
+        MENUITEM "&Dynamic Help\tCtrl+F1",      ID_HELP_DYNAMIC
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+IDR_LUA_CODE_TYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close\tCtrl+W",              ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Load code...\tCtrl+L",       ID_FILE_OPEN_CODE
+        MENUITEM "Sa&ve code...\tCtrl+K",       ID_FILE_SAVE_CODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Previe&w",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Page Set&up...",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tCtrl+G",          ID_EDIT_REPEAT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Disassembler\tAlt+0",        ID_VIEW_DEASM
+        MENUITEM SEPARATOR
+        MENUITEM "&Value Stack\tAlt+1",			ID_VIEW_REGISTERBAR
+        MENUITEM "&Global Variables\tAlt+2",    ID_VIEW_GLOBAL_VARS
+        MENUITEM "&Local Variables\tAlt+3",     ID_VIEW_LOCAL_VARS
+        MENUITEM "&Call Stack\tAlt+4",          ID_VIEW_STACK
+        MENUITEM "I&nput/Output\tAlt+5",        ID_VIEW_IO_WINDOW
+        MENUITEM "&Identifiers\tAlt+6",         ID_VIEW_IDENT
+        MENUITEM "Command Log\tAlt+7",          ID_VIEW_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "St&atusbar",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Simulator"
+    BEGIN
+        MENUITEM "&Parse Lua Program\tF7",      ID_SIM_ASSEMBLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Debugger\tF6",               ID_SIM_DEBUG
+        MENUITEM SEPARATOR
+        MENUITEM "&Run\tF5",                    ID_SIM_GO
+        MENUITEM "R&estart Program\tCtrl+Shift+F5", ID_SIM_RESTART
+        MENUITEM "&Break\tCtrl+Break",          ID_SIM_BREAK
+        MENUITEM SEPARATOR
+        MENUITEM "&Step Into\tF11",             ID_SIM_STEP_INTO
+        MENUITEM "Step O&ver\tF10",             ID_SIM_STEP_OVER
+        MENUITEM "Step &Out\tCtrl+F11",         ID_SIM_GO_RTS
+        MENUITEM "Run to &Cursor\tCtrl+F10",    ID_SIM_GO_TO_CURSOR
+        MENUITEM SEPARATOR
+        MENUITEM "Toggle Breakpoint\tF9",       ID_SIM_BREAKPOINT
+        MENUITEM "Breakpo&int Params...\tAlt+F9", ID_SIM_EDIT_BREAKPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...\tCtrl+E",         ID_SIM_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "Tile &Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "&Tile Vertically",            ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   ID_HELP_FINDER
+        MENUITEM "&Dynamic Help\tCtrl+F1",      ID_HELP_DYNAMIC
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_DEASM6502 MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Display from address...",    ID_DEASM_GOTO
+        MENUITEM SEPARATOR
+        MENUITEM "&Save program...",            ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "D&isassembly options...",     ID_DEASM_OPTIONS
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "- POPUP -"
+    BEGIN
+        MENUITEM "&Cut",                        ID_EDIT_CUT
+        MENUITEM "C&opy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Toggle breakpoint",          ID_SIM_BREAKPOINT
+        MENUITEM "&Breakpoint parameters...",   ID_SIM_EDIT_BREAKPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Editor options...",          ID_EDITOR_OPT
+    END
+END
+
+IDR_POPUP_MEMORY MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Display from address...",    ID_MEMORY_GOTO
+        MENUITEM "&Modify memory bytes...",     ID_MEMORY_CHG
+        MENUITEM SEPARATOR
+        MENUITEM "M&emory window options...",   ID_MEMORY_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "D&isplay Hex && Text",        ID_MEMORY_FULL
+        MENUITEM "Display &Hex only",           ID_MEMORY_HEX
+        MENUITEM "Display &Text only",          ID_MEMORY_TEXT
+    END
+END
+
+IDR_POPUP_ZPMEMORY MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Display from address...",    ID_MEMORY_GOTO
+        MENUITEM "&Modify memory bytes...",     ID_MEMORY_CHG
+        MENUITEM SEPARATOR
+        MENUITEM "M&emory window options...",   ID_MEMORY_OPTIONS
+    END
+END
+
+IDR_POPUP_TERMINAL MENU 
+BEGIN
+    POPUP "- POPUP -"
+    BEGIN
+        MENUITEM "&Paste Text\tIns",            ID_PASTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ASSEMBLE DIALOGEX 0, 0, 168, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Assembling"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Row:",IDC_STATIC,56,8,28,8
+    RTEXT           "0",IDC_CURR_ROW,84,8,28,8
+    LTEXT           "Pass:",IDC_STATIC,56,24,32,8
+    RTEXT           "0",IDC_PASS_NO,100,24,12,8
+    CONTROL         "Progress1",IDC_ASM_PROGRESS,"msctls_progress32",0x0,35,43,97,8
+    EDITTEXT        IDC_DIAL_ASM_ERR,7,40,154,44,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_VISIBLE,WS_EX_NOPARENTNOTIFY
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,56,99,54,14
+    ICON            IDR_LUA_SRC_TYPE,IDC_DIAL_ASM_ICN1,47,66,20,20
+    ICON            IDR_MAINFRAME,IDC_DIAL_ASM_ICN3,99,66,20,20
+    ICON            IDI_ARROW,IDC_DIAL_ASM_ICN2,73,66,20,20
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 305, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Lua Studio"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "Lua Studio",IDC_TITLE,12,6,136,14,SS_NOPREFIX
+    LTEXT           "version...",IDC_ABOUT_VER,14,22,134,8,SS_NOPREFIX
+    LTEXT           "Copyright © 1996-2008 Michal Kowalski",IDC_STATIC,14,36,127,8
+    LTEXT           "lua-studio.luaforge.net",IDC_LINK,14,47,70,8
+    LTEXT           "Integrated editor and debugger for Lua",IDC_STATIC,14,62,122,8
+    LTEXT           "www.lua.org",IDC_LINK_LUA,14,73,40,8
+    LTEXT           "Syntax coloring editor: Scintilla\nScintilla wrapper: PJ Naughter\nDocking bars: Cristi Posea\nLink control: Paul DiLascia",IDC_STATIC,14,87,96,32
+    LTEXT           "This application is free. It is provided ""as is"" without express or implied warranty and with no claim as to its suitability for any purpose.",IDC_STATIC,14,127,146,24,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,241,141,54,14,WS_GROUP
+END
+
+IDD_PROPPAGE_EDITOR DIALOG  0, 0, 240, 140
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Tab step:",IDC_STATIC,8,9,31,8
+    EDITTEXT        IDC_OPT_ED_TAB_STEP,48,7,25,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_OPT_ED_TAB_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,68,7,11,10
+    CONTROL         "&Autoindent",IDC_OPT_ED_AUTO_INDENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,24,50,10
+    CONTROL         "&Color syntax",IDC_OPT_ED_COLOR_SYNTAX,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,8,39,54,10
+    CONTROL         "C&heck syntax while typing",IDC_OPT_ED_AUTO_SYNTAX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,92,9,97,10
+    CONTROL         "A&uto capitalize instructions and directives",IDC_OPT_ED_AUTO_UPPER_CASE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,92,24,145,10
+    CONTROL         "&Open new document on startup",IDC_OPT_ED_NEW_FILE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,92,39,115,10
+    GROUPBOX        "Color Syntax",IDC_STATIC,8,56,224,78
+    LTEXT           "&Element",IDC_STATIC,16,70,26,8
+    COMBOBOX        IDC_OPT_ED_ELEMENT,16,82,56,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Co&lor",IDC_STATIC,16,101,17,8
+    PUSHBUTTON      "",IDC_OPT_ED_COLOR,39,98,32,14
+    CONTROL         "&Bold",IDC_OPT_ED_BOLD_FONT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,116,30,10
+    CONTROL         "",IDC_OPT_ED_EXAMPLE,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,80,64,147,66
+END
+
+IDD_PROPPAGE_GENERAL DIALOG  0, 0, 240, 140
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Processor",IDC_STATIC,8,4,131,52
+    CONTROL         "Basic &6502",IDC_OPT_6502,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,15,51,10
+    CONTROL         "6&5C02, 6501",IDC_OPT_65C02,"Button",BS_AUTORADIOBUTTON,16,27,57,10
+    LTEXT           "&Address bus width:",IDC_STATIC,16,40,60,8
+    EDITTEXT        IDC_OPT_BUS_WIDTH,87,38,25,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Spin1",IDC_OPT_BUS_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,107,38,11,14
+    GROUPBOX        "Pointers' colors",IDC_STATIC,8,60,131,68,WS_GROUP
+    LTEXT           "&Current instruction",IDC_STATIC,13,73,58,8
+    PUSHBUTTON      "",IDC_OPT_MARK_PTR_COL,85,70,28,14
+    LTEXT           "&Breakpoint",IDC_STATIC,13,92,35,8
+    PUSHBUTTON      "",IDC_OPT_MARK_BRKP_COL,85,89,28,14
+    LTEXT           "&Error in line",IDC_STATIC,13,111,46,8
+    PUSHBUTTON      "",IDC_OPT_MARK_ERR_COL,85,108,28,14
+END
+
+IDD_PROPPAGE_VIEW DIALOG  0, 0, 240, 140
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Appearance"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Window:",IDC_STATIC,8,6,29,8
+    LISTBOX         IDC_OPT_VIEW_WND,8,18,76,64,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Example:",IDC_STATIC,92,6,31,8
+    CONTROL         "",IDC_OPT_VIEW_EXAMPLE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_SUNKEN | WS_GROUP,92,18,140,64
+    PUSHBUTTON      "&Font...",IDC_OPT_VIEW_FONT_BTN,8,92,44,14
+    EDITTEXT        IDC_OPT_VIEW_FONT_NAME,64,93,140,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "&Text color:",IDC_STATIC,8,114,34,8
+    PUSHBUTTON      "",IDC_OPT_VIEW_TXT_COL,52,112,28,14
+    LTEXT           "&Background color:",IDC_STATIC,96,114,59,8
+    PUSHBUTTON      "",IDC_OPT_VIEW_BKGND_COL,160,112,28,14
+END
+
+IDD_EDIT_BREAKPOINT DIALOG  0, 0, 184, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Breakpoint"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Address",IDC_STATIC,8,10,26,8
+    EDITTEXT        IDC_ADDR,40,8,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Breakpoint condition",IDC_STATIC,8,26,81,49
+    CONTROL         "&Execute",IDC_EDIT_BP_EXEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,36,42,10
+    CONTROL         "&Read from",IDC_EDIT_BP_READ,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,17,49,45,8
+    CONTROL         "&Write to",IDC_EDIT_BP_WRITE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,17,61,41,10
+    CONTROL         "&Disabled",IDC_EDIT_BP_DISABLED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,79,43,10
+    DEFPUSHBUTTON   "OK",IDOK,128,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,23,50,14
+END
+
+IDD_EDIT_FIND DIALOG  30, 73, 236, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_STATIC,4,8,34,8
+    EDITTEXT        IDC_EDIT_TEXT,47,7,128,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &whole word only",IDC_EDIT_WHOLE_WORD,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,4,28,89,10
+    CONTROL         "Match &case",IDC_EDIT_MATCH_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,43,53,10
+    GROUPBOX        "Direction",IDC_STATIC,106,26,69,28,WS_GROUP
+    CONTROL         "&Up",IDC_EDIT_DIRECTION_UP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,111,39,25,10
+    CONTROL         "&Down",IDC_EDIT_DIRECTION_DOWN,"Button",BS_AUTORADIOBUTTON,138,39,35,10
+    DEFPUSHBUTTON   "&Find Next",IDOK,182,5,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,182,23,50,14
+END
+
+IDD_EDIT_REPLACE DIALOG  36, 44, 230, 88
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_STATIC,4,9,34,8
+    EDITTEXT        IDC_EDIT_TEXT,54,7,114,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Re&place with:",IDC_STATIC,4,26,44,8
+    EDITTEXT        IDC_EDIT_REPLACE_WITH,54,24,114,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &whole word only",IDC_EDIT_WHOLE_WORD,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,47,89,10
+    CONTROL         "Match &case",IDC_EDIT_MATCH_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,63,53,10
+    GROUPBOX        "Replace in",IDC_STATIC,96,43,72,37,WS_GROUP
+    CONTROL         "&Selection",IDC_EDIT_SCOPE_SELECTION,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,54,45,10
+    CONTROL         "Wh&ole file",IDC_EDIT_SCOPE_WHOLE_FILE,"Button",BS_AUTORADIOBUTTON,102,66,47,10
+    DEFPUSHBUTTON   "&Find Next",IDC_EDIT_SKIP,174,4,50,14,WS_GROUP
+    PUSHBUTTON      "&Replace",IDC_EDIT_REPLACE,174,21,50,14
+    PUSHBUTTON      "Replace &All",IDC_EDIT_REPLACE_ALL,174,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,55,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ASSEMBLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_PROPPAGE_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_PROPPAGE_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_PROPPAGE_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_EDIT_BREAKPOINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "G",            ID_EDIT_REPEAT,         VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_FILE_CLOSE,          VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_FILE_OPEN_CODE,      VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_FILE_SAVE_CODE,      VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP_DYNAMIC,        VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          ID_SIM_ASSEMBLE,        VIRTKEY, NOINVERT
+    VK_CANCEL,      ID_SIM_BREAK,           VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_SIM_BREAKPOINT,      VIRTKEY, NOINVERT
+    VK_F6,          ID_SIM_DEBUG,           VIRTKEY, NOINVERT
+    VK_F9,          ID_SIM_EDIT_BREAKPOINT, VIRTKEY, ALT, NOINVERT
+    "G",            ID_SIM_GEN_INT,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "I",            ID_SIM_GEN_IRQ,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "N",            ID_SIM_GEN_NMI,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "R",            ID_SIM_GEN_RST,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F5,          ID_SIM_GO,              VIRTKEY, NOINVERT
+    VK_F10,         ID_SIM_GO_TO_CURSOR,    VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         ID_SIM_GO_RTS,          VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_SIM_GO_TO_CURSOR,    VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_SIM_OPTIONS,         VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_SIM_RESTART,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F11,         ID_SIM_SKIP_TO_LINE,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F11,         ID_SIM_STEP_INTO,       VIRTKEY, NOINVERT
+    VK_F11,         ID_SIM_STEP_OUT,        VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_SIM_STEP_OVER,       VIRTKEY, NOINVERT
+    "0",            ID_VIEW_DEASM,          VIRTKEY, ALT, NOINVERT
+    "6",            ID_VIEW_IDENT,          VIRTKEY, ALT, NOINVERT
+    "5",            ID_VIEW_IO_WINDOW,      VIRTKEY, ALT, NOINVERT
+    "3",            ID_VIEW_LOCAL_VARS,     VIRTKEY, ALT, NOINVERT
+    "7",            ID_VIEW_LOG,            VIRTKEY, ALT, NOINVERT
+    "1",            ID_VIEW_REGISTERBAR,    VIRTKEY, ALT, NOINVERT
+    "4",            ID_VIEW_STACK,          VIRTKEY, ALT, NOINVERT
+    "2",            ID_VIEW_GLOBAL_VARS,    VIRTKEY, ALT, NOINVERT
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(NEVER)
+#if defined(APSTUDIO_INVOKED)
+IDR_ACCELERATOR1$(NEVER) ACCELERATORS 
+#else
+IDR_ACCELERATOR1 ACCELERATORS 
+#endif
+BEGIN
+    "X",            ID_EDIT_VIEW_TABS,      VIRTKEY, CONTROL, NOINVERT
+END
+#endif
+
+IDR_DEFAULT_ACCEL ACCELERATORS 
+BEGIN
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_TOGGLE_BLOCK,   VIRTKEY, ALT, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_EDIT_EXPAND_ALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_DELETE_BACK,    VIRTKEY, NOINVERT
+    VK_BACK,        ID_EDIT_DELETE_WORD_BACK, VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE_TO_EOL,  VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_EDIT_LINE_DOWN,      VIRTKEY, NOINVERT
+    VK_DOWN,        ID_EDIT_SCROLL_DOWN,    VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_EDIT_EXT_LINE_DOWN,  VIRTKEY, SHIFT, NOINVERT
+    VK_END,         ID_EDIT_LINE_END,       VIRTKEY, NOINVERT
+    VK_END,         ID_EDIT_TEXT_END,       VIRTKEY, CONTROL, NOINVERT
+    VK_END,         ID_EDIT_EXT_LINE_END,   VIRTKEY, SHIFT, NOINVERT
+    VK_END,         ID_EDIT_EXT_TEXT_END,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F2,          ID_EDIT_GOTO_NEXT_BOOKMARK, VIRTKEY, NOINVERT
+    VK_F2,          ID_EDIT_TOGGLE_BOOKMARK, VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_EDIT_GOTO_PREV_BOOKMARK, VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_EDIT_CLEAR_ALL_BOOKMARKS, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    VK_F3,          ID_EDIT_FIND_PREVIOUS,  VIRTKEY, SHIFT, NOINVERT
+    VK_HOME,        ID_EDIT_HOME,           VIRTKEY, NOINVERT
+    VK_HOME,        ID_EDIT_TEXT_BEGIN,     VIRTKEY, CONTROL, NOINVERT
+    VK_HOME,        ID_EDIT_EXT_HOME,       VIRTKEY, SHIFT, NOINVERT
+    VK_HOME,        ID_EDIT_EXT_TEXT_BEGIN, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_SWITCH_OVRMODE, VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_VIEW_TABS,      VIRTKEY, ALT, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_EDIT_CHAR_LEFT,      VIRTKEY, NOINVERT
+    VK_LEFT,        ID_EDIT_WORD_LEFT,      VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_EDIT_EXT_CHAR_LEFT,  VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_EDIT_EXT_WORD_LEFT,  VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_NEXT,        ID_EDIT_PAGE_DOWN,      VIRTKEY, NOINVERT
+    VK_NEXT,        ID_EDIT_EXT_PAGE_DOWN,  VIRTKEY, SHIFT, NOINVERT
+    VK_PRIOR,       ID_EDIT_PAGE_UP,        VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_EDIT_EXT_PAGE_UP,    VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_EDIT_CHAR_RIGHT,     VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_EDIT_WORD_RIGHT,     VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_EDIT_EXT_CHAR_RIGHT, VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_EDIT_EXT_WORD_RIGHT, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_SUBTRACT,    ID_EDIT_COLLAPSE_ALL,   VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         ID_EDIT_TAB,            VIRTKEY, NOINVERT
+    VK_TAB,         ID_EDIT_UNTAB,          VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          ID_EDIT_LINE_UP,        VIRTKEY, NOINVERT
+    VK_UP,          ID_EDIT_SCROLL_UP,      VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_EDIT_EXT_LINE_UP,    VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            57643,                  VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_SIM_ASSEMBLE
+    BUTTON      ID_SIM_DEBUG
+    SEPARATOR
+    BUTTON      ID_SIM_GO
+    BUTTON      ID_SIM_STEP_OVER
+    BUTTON      ID_SIM_STEP_INTO
+    BUTTON      ID_SIM_STEP_OUT
+    BUTTON      ID_SIM_GO_TO_CURSOR
+    BUTTON      ID_SIM_RESTART
+    BUTTON      ID_SIM_BREAKPOINT
+    BUTTON      ID_SIM_BREAK
+    SEPARATOR
+    BUTTON      ID_VIEW_DEASM
+    BUTTON      ID_VIEW_REGISTERBAR
+    BUTTON      ID_VIEW_GLOBAL_VARS
+    BUTTON      ID_VIEW_LOCAL_VARS
+    BUTTON      ID_VIEW_STACK
+    BUTTON      ID_VIEW_IDENT
+    BUTTON      ID_VIEW_IO_WINDOW
+    BUTTON      ID_VIEW_LOG
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 0,1,0,10
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Lua Studio English Resources"
+            VALUE "CompanyName", "MiKSoft"
+            VALUE "FileDescription", "resources"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "res.dll"
+            VALUE "LegalCopyright", "Copyright © 1996-2008 Michal Kowalski"
+            VALUE "OriginalFilename", "res.dll"
+            VALUE "ProductName", "res"
+            VALUE "ProductVersion", "0, 1, 0, 10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LINK                CURSOR                  "res\\link.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPPAGE_EDITOR DLGINIT
+BEGIN
+    IDC_OPT_ED_ELEMENT, 0x403, 13, 0
+0x6e49, 0x7473, 0x7572, 0x7463, 0x6f69, 0x736e, "\000" 
+    IDC_OPT_ED_ELEMENT, 0x403, 11, 0
+0x6944, 0x6572, 0x7463, 0x7669, 0x7365, "\000" 
+    IDC_OPT_ED_ELEMENT, 0x403, 9, 0
+0x6f43, 0x6d6d, 0x6e65, 0x7374, "\000" 
+    IDC_OPT_ED_ELEMENT, 0x403, 8, 0
+0x754e, 0x626d, 0x7265, 0x0073, 
+    IDC_OPT_ED_ELEMENT, 0x403, 8, 0
+0x7453, 0x6972, 0x676e, 0x0073, 
+    IDC_OPT_ED_ELEMENT, 0x403, 10, 0
+0x6553, 0x656c, 0x7463, 0x6f69, 0x006e, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_DISASM_FORMAT1      "; Program disassembly from $%04X to $%04X \t%s\r\n"
+    IDS_DISASM_FORMAT2      "\r\n; Labels encoding:\r\n;   znn - zero page addresses\r\n ;   annnn - absolute addresses\r\n;   ennnn - relative branches addresses\r\n\r\n"
+    ID_HELP_DYNAMIC         "Toggle context sensitive dynamic help window\nDynamic Help"
+    ID_SIM_STEP_OUT         "Steps out of current functiont\nStep out (Shift+F11)"
+    ID_VIEW_GLOBAL_VARS     "Toggle global variables window\nToggle Global Variables Window"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLBAR             "Standard"
+    ID_VIEW_STACK           "Show or hide Lua call stack window\nToggle Call Stack Window (Alt+4)"
+    ID_VIEW_LOG             "Show or hide command log window\nToggle Log Window (Alt+7)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MEMORY_GOTO          "Sets 6502 µP memory display begining address"
+    ID_MEMORY_OPTIONS       "Sets 6502 µP memory window options"
+    ID_MEMORY_CHG           "Modify 6502 µP memory bytes"
+    ID_MEMORY_FULL          "Display memory as hexadecimal and text dump"
+    ID_MEMORY_HEX           "Display memory as hexadecimal dump"
+    ID_MEMORY_TEXT          "Display memory as text dump"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DEASM_GOTO           "Sets disassemble program display begining address"
+    ID_DEASM_OPTIONS        "Sets disassembler options"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPT_VIEW_EXAMPLE    "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n0123456789\n.,:""/?+-=!@#$%^&*()|"
+    IDS_OPT_VIEW_EXAMPLE_1  "; Sample text\n\tLDY #0\n\t; copy\n.loop:\tLDA (src),Y\n\tSTA (dest),Y\n\tINY\n\tBPL .loop\n\tRTS"
+    IDS_OPT_VIEW_EXAMPLE_2  "Simulator window\n\n12 34 56 78 90 AB CD EF"
+    IDS_OPT_VIEW_EXAMPLE_3  "E897  58        CLI\nE898  20 90 E8  JSR E890\nE89B  A5 F2     LDA $F2\nE89D  C5 A0     CMP $A0\nE89F  F0 09     BEQ E8AA\nE8A1  A8        TAY\nE8A2  B1 80     LDA ($80),Y"
+    IDS_OPT_VIEW_EXAMPLE_4  "1000  20 01 EA  > \001ê<\n1003  BF 20 04  >¿ \004<\n1006  0F 41 F7  >\017A÷<\n1009  EA 97 70  >ê—p<\n100C  77 71 D8  >wqØ<\n100F  A2 66 A0  >¢f <\n1012  33 18 A9  >3\030©<\n1015  FF 85 80  >ÿ… <\n"
+    IDS_OPT_VIEW_EXAMPLE_5  "81  00 ' '  2F00  00 00 00 00 00\n82  2F '/'  052F  00 00 00 00 00\n83  05 '.'  C505  00 00 00 00 00\n84  C5 'Å'  58C5  FF 00 BF C6 58\n85  58 'X'  0058  00 00 00 00 00\n86  00 ' '  0000  00 00 00 00 00\n87  00 ' '  0000  00 00 00 00 00\n88  00 ' '  0000  00 00 00 00 00"
+    IDS_OPT_VIEW_EXAMPLE_6  "1FF  06 '.'  0006  00 00 00 00\n1FE  04 '.'  0604  06 00 00 20\n1FD  06 '.'  0406  00 00 00 00\n1FC  09 '.'  0609  06 60 EA 85\n1FB  06 '.'  0906  00 00 00 00\n1FA  11 '.'  0611  06 98 60 A0\n1F9  00 ' '  1100  00 00 00 00\n"
+    IDS_OPT_VIEW_LIST       "Editor;Simulator I/O;Disassembler;6502 µP Memory;Zero Page Memory;6502 µP Stack;"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MOTOROLA_S_ERR_3    "Unknown data format; line %1"
+    IDS_MOTOROLA_S_ERR_4    "x"
+    IDS_ZMEMORY_TITLE       "6502 µP Zero Page"
+    IDS_ABOUT_VER           "Version Number: %d.%d.%d build %d"
+    IDS_STACK               "6502 µP Stack"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SAVE_CODE_ERR_1     "Error opening ""%1"" file to write: %2"
+    IDS_SAVE_CODE_ERR_2     "Error writing to ""%1"" file: %2"
+    IDS_LOAD_CODE           "Intel-HEX format (*.65h;*.hex)|*.65h;*.hex|Motorola s-rekord format (*.65m; *.s9)|*.65m;*.s9|Binary image (*.65b)|*.65b|Binary program (*.65p)|*.65p|Atari binary program (*.xex)|*.xex|All files (*.*)|*.*||"
+    IDS_LOAD_CODE_ERR_1     "Error opening ""%1"" file to read: %2"
+    IDS_LOAD_CODE_ERR_2     "Error reading from ""%1"" file: %2"
+    IDS_LOAD_CODE_DLG       "Load machine code"
+    IDS_SAVE_CODE_DLG       "Save machine code as"
+    IDS_INTEL_HEX_ERR_1     "Checksum error at row %1"
+    IDS_INTEL_HEX_ERR_2     "Bad file format"
+    IDS_INTEL_HEX_ERR_3     "Unknown data format at row %1"
+    IDS_INTEL_HEX_ERR_4     "x"
+    IDS_CODE_EXTENSIONS     "65h;hex;65m;s9 ;65b;65p;com;"
+    IDS_STOP_DEBUG          "Assemble stops running simulator.\nExit debugger to assemble the program?"
+    IDS_ASM_OPT_LIST_FILES  "Listings (*.lst) |*.lst|All files (*.*) |*.*||"
+    IDS_MOTOROLA_S_ERR_1    "Checksum error at row %1"
+    IDS_MOTOROLA_S_ERR_2    "Bad file format"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_DEASM           "Open new disassembly window with Lua code\nNew Generated Code Window (Alt+0)"
+    ID_VIEW_IDENT           "Show or hide source code identifiers window\nToggle Identifiers Window (Alt+5)"
+    ID_VIEW_MEMORY          "Show or hide 6502 µP memory window\nToggle 6502 Memory Window (Alt+2)"
+    ID_VIEW_IO_WINDOW       "Show or hide In/Out simulator window\nToggle In/Out Window (Alt+6)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDITOR_OPT           "Change editor options"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASM_ERR_42          "Parameter referenced with dollar char '$' has no text value"
+    IDS_ASM_ERR_43          "Referenced parameter not exist--param number out of range"
+    IDS_ASM_ERR_44          "Undetermined expression value in macro parameter number"
+    IDS_ASM_ERR_45          "Local label not allowed for macrodefiniiton name"
+    IDS_ASM_ERR_46          "After '%' char macro parameter number is expected"
+    IDS_ASM_ERR_47          "Label not allowed for directive"
+    IDS_ASM_ERR_48          "Wrong repeat number - expected value in range from 0 to 65535"
+    IDS_ASM_ERR_49          ".ENDR directive without pairing .REPEAT"
+    IDS_ASM_ERR_50          ".INCLUDE directive not allowed in macro/repeat"
+    IDS_ASM_ERR_51          "String to long--maximal length: 255 characters"
+    IDS_ASM_ERR_52          "Wrong bit number--expected value from 0 to 7"
+    IDS_ASM_ERR_53          "Missing required option name"
+    IDS_ASM_ERR_54          "Unrecognized option name"
+    IDS_ASM_ERR_55          "Input line exeeds 1024 characters limit"
+    IDS_ASM_ERR_56          "Missing macro parameter name"
+    IDS_ASM_ERR_57          "Indirect postindexed addressing mode requires byte operand"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASM_ERR_26          ".ENDIF directive without pairing .IF"
+    IDS_ASM_ERR_27          ".ELSE directive without pairing .IF"
+    IDS_ASM_ERR_28          "Missing .ENDIF directive"
+    IDS_ASM_ERR_29          "Local label not allowed - global label expected"
+    IDS_ASM_ERR_30          "Missing label"
+    IDS_ASM_ERR_31          "Assembly stopped"
+    IDS_ASM_ERR_32          "Missing .ORG directive--undetermined program begining address"
+    IDS_ASM_ERR_33          "Missing macro name label"
+    IDS_ASM_ERR_34          "Repeated macro parameter name"
+    IDS_ASM_ERR_35          "Nested macrodefiniiton not allowed"
+    IDS_ASM_ERR_36          "Missing .ENDM directive ending macrodefinition"
+    IDS_ASM_ERR_37          "Unrecognized instruction/directive/macro name"
+    IDS_ASM_ERR_38          "Not enough parameters in macro call"
+    IDS_ASM_ERR_39          ".ENDM directive without pairing .MACRO"
+    IDS_ASM_ERR_40          ".EXITM directive outside macrodefinition not allowed"
+    IDS_ASM_ERR_41          "Text expression not allowed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASM_ERR_10          "Missing index register X"
+    IDS_ASM_ERR_11          "Missing index register Y"
+    IDS_ASM_ERR_12          "Expected comma ',' or round bracket ')'"
+    IDS_ASM_ERR_13          "Missing round bracket ')'"
+    IDS_ASM_ERR_14          "Expected round bracket '('"
+    IDS_ASM_ERR_15          "Divide by zero in expression"
+    IDS_ASM_ERR_16          "Missing square bracket ']' closing expression"
+    IDS_ASM_ERR_17          "Missing constant value (number, label, function or '*')"
+    IDS_ASM_ERR_18          "Redefinition - label already defined"
+    IDS_ASM_ERR_19          "Indeterminate expression value"
+    IDS_ASM_ERR_20          "Wrapped program counter"
+    IDS_ASM_ERR_21          "Undefined label"
+    IDS_ASM_ERR_22          "Phase error--inconsistent label value between passes"
+    IDS_ASM_ERR_23          "Relative address out of range"
+    IDS_ASM_ERR_24          "Addressing mode not allowed"
+    IDS_ASM_ERR_25          "Missing string"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASM_FORM1           "ERROR E%03d: %s. ROW %d, FILE %s"
+    IDS_ASM_FORM2           "ERROR E%03d: %s. FILE %s"
+    IDS_ASM_FORM3           "ERROR E%03d: %s."
+    IDS_ASM_FORM4           "ERROR E%03d: %s '%s'. ROW %d, FILE %s"
+    IDS_ASM_FORM5           "USER DEF ERROR: %s. ROW %d, FILE %s"
+    IDS_ASM_FORM6           "USER DEF ERROR. ROW %d, FILE %s"
+    IDS_ASM_ERR_MSG_FIRST   "No errors encountered"
+    IDS_ASM_ERR_01          "Unexpected data after instruction/label--comment or <CR> expected"
+    IDS_ASM_ERR_02          "Unrecognized data--space or label expected"
+    IDS_ASM_ERR_03          "Out of memory"
+    IDS_ASM_ERR_04          "Error reading file"
+    IDS_ASM_ERR_05          "Number exceeds 16-bit integer range"
+    IDS_ASM_ERR_06          "Value doesn't fit in single byte"
+    IDS_ASM_ERR_07          "Illegal negative value"
+    IDS_ASM_ERR_08          "Illegal data--instruction, comment or <CR> expected"
+    IDS_ASM_ERR_09          "Missing index register (X or Y)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SIM_SKIP_INSTR       "Skips current instruction\nSkip (Shift+F11)"
+    ID_SIM_SKIP_TO_LINE     "Skips to the line containing the cursor\nSkip to Cursor"
+    ID_SIM_BREAK            "Stops running program\nStop (Ctrl+Break)"
+    ID_SIM_RESTART          "Reload and restart program\nRestart (Ctrl+Shift+F5)"
+    ID_SIM_EDIT_BREAKPOINT  "Set breakpoint parameters\nBreakpoint Parameters"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SIM_DEBUG            "Debugger mode - program runing & tracing\nDebugger (F6)"
+    ID_SIM_GO               "Runs program\nRun (F5)"
+    ID_SIM_STEP_INTO        "Steps into the next statement\nStep Into (F11)"
+    ID_SIM_ASSEMBLE         "Parse active document\nParse Document (F7)"
+    ID_SIM_OPTIONS          "Change application options"
+    ID_SIM_STEP_OVER        "Steps over the next statement\nStep Over (F10)"
+    ID_SIM_GO_RTS           "Run program until it returns from current function\nStep Out of Current Function (Ctrl+F11)"
+    ID_SIM_GO_TO_CURSOR     "Runs program to the line containing the cursor\nRun to Cursor (Ctrl+F10)"
+    ID_SIM_DEBUG_STOP       "Exits debugger mode\nExit Debugger (Shift+F5)"
+    ID_SIM_BREAKPOINT       "Toggle breakpoint at the current line\nToggle Breakpoint (F9)"
+END
+
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_LOCAL_VARS      "Toggle local variables window\nToggle Local Variables Window"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SYM_STAT_FIN        "Program'e execution finished"
+    IDS_OPTIONS             "Options"
+    IDS_SRC_NO_CODE2        "Current row doesn't contain machine code.\nRun to cursor not possible."
+    IDS_SRC_NO_CODE3        "Current row doesn't contain machine code.\nSkip to cursor not possible."
+    IDS_SRC_DATA            "Current row contains data, not code.\nContinue anyway?"
+    IDS_MAINFRM_PROG_RUNNING "Stop simulator and exit application?"
+    IDS_MSG_HEX_STR         "Please enter four digit hexadecimal number."
+    IDS_IDENT_TITLE         "Identifiers"
+    IDS_IDENT_COL_NAME      "Name"
+    IDS_IDENT_COL_VALUE     "Value"
+    IDS_IDENT_COL_AREA      "Range"
+    IDS_IDENT_GLOBAL        "global"
+    IDS_MEMORY_TITLE        "6502 µP Memory"
+    IDS_IO_WINDOW           "In/Out Window"
+    IDS_SAVE_CODE           "Intel-HEX format (*.65h;*.hex)|*.65h;*.hex|Motorola s-rekord format (*.65m; *.s9)|*.65m;*.s9|Binary image (*.65b)|*.65b|Binary program (*.65p)|*.65p||"
+    IDS_MSG_BAD_DEC_HEX_NUM "Please enter hexadecimal number proceded by '$' or '0x' characters or decimal number."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASM_ERR_58          "Constant label (predefined) cannot be redefined"
+    IDS_ASM_ERR_59          "Expected valid range: first value has to be less than or equal to second value"
+    IDS_ASM_ERR_60          "Expected nonzero value"
+    IDS_SRC_NO_CODE         "Current row doesn't contain machine code.\nCannot set breakpoint."
+    IDS_SYM_STAT_STOP       "Program execution stopped"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SYM_STAT_OK         "OK"
+    IDS_SYM_STAT_BPX        "Execution stopped on breakpoint"
+    IDS_SYM_STAT_BPR        "Execution stopped on breakpoint (caused by reading)"
+    IDS_SYM_STAT_BPW        "Execution stopped on breakpoint (caused by writing)"
+    IDS_SYM_STAT_ILL        "Illegal byte code encountered"
+    IDS_SYM_STAT_RUN        "Program is running..."
+    IDS_SYM_STAT_INP_WAIT   "Program is waiting for input data..."
+    IDS_SYM_ILL_WRITE       "Protected area write attempt detected"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_ASM_THREAD      "Starting assembly thread failed"
+    IDS_DIAL_ASM_OK         "OK"
+    IDS_ROW_COLUMN          "Ln %d, Col %d"
+    IDS_ERR_SYM_THREAD      "Starting simulator thread failed"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_ZEROPAGEBAR     "Show or hide 6502 µP zero page memory window\nToggle zero page memory window (Alt+3)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_TOGGLE_BLOCK    "Toggle collapsible block of text"
+    ID_EDIT_COLLAPSE_ALL    "Fold all collapsible text blocks"
+    ID_EDIT_EXPAND_ALL      "Expand all collapsible text blocks"
+    ID_VIEW_REGISTERBAR     "Toggle Lua value stack window\nToggle Value Stack Window (Alt+1)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase (Del)"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy (Ctrl+C)"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut (Ctrl+X)"
+    ID_EDIT_FIND            "Find the specified text\nFind (Ctrl+F)"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste (Ctrl+V)"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All (Ctrl+A)"
+    ID_EDIT_UNDO            "Undo the last action\nUndo (Ctrl+Z)"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this file"
+    ID_FILE_MRU_FILE2       "Open this file"
+    ID_FILE_MRU_FILE3       "Open this file"
+    ID_FILE_MRU_FILE4       "Open this file"
+    ID_FILE_MRU_FILE5       "Open this file"
+    ID_FILE_MRU_FILE6       "Open this file"
+    ID_FILE_MRU_FILE7       "Open this file"
+    ID_FILE_MRU_FILE8       "Open this file"
+    ID_FILE_MRU_FILE9       "Open this file"
+    ID_FILE_MRU_FILE10      "Open this file"
+    ID_FILE_MRU_FILE11      "Open this file"
+    ID_FILE_MRU_FILE12      "Open this file"
+    ID_FILE_MRU_FILE13      "Open this file"
+    ID_FILE_MRU_FILE14      "Open this file"
+    ID_FILE_MRU_FILE15      "Open this file"
+    ID_FILE_MRU_FILE16      "Open this file"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Displays the application information and copyright\nAbout..."
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "List Help topics\nHelp Index"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE_CODE       "Save machine code"
+    ID_FILE_OPEN_CODE       "Load machine code"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew (Ctrl+N)"
+    ID_FILE_OPEN            "Open an existing document\nOpen (Ctrl+O)"
+    ID_FILE_CLOSE           "Close the active document\nClose (Ctrl+W)"
+    ID_FILE_SAVE            "Save the active document\nSave (Ctrl+S)"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint (Ctrl+P)"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Lua IDE"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Lua Studio"
+    IDR_LUA_SRC_TYPE        "Lua Source Files\n\nSrc65\nLua Source Files (*.lua)\n.lua\nM6502.Source\n6502 source text"
+    IDR_LUA_CODE_TYPE       "6502 Simulator\nDisassembly \n\n6502 source files (*.65s)\n.65s\nM6502.Code\n6502 machine code"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_UNDO_FORMAT    "&Undo %s\tCtrl+Z"
+    IDS_MENU_REDO_FORMAT    "&Redo %s\tCtrl+Y"
+    IDS_MENU_UNDO_DEFAULT   "&Undo\tCtrl+Z"
+    IDS_MENU_REDO_DEFAULT   "&Redo\tCtrl+Z"
+    IDS_EDITOP_UNKNOWN      "Unknown"
+    IDS_EDITOP_PASTE        "Paste"
+    IDS_EDITOP_DELSELECTION "Delete Selection"
+    IDS_EDITOP_CUT          "Cut"
+    IDS_EDITOP_DELETE       "Delete"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDITOP_TYPING       "Typing"
+    IDS_EDITOP_BACKSPACE    "Backspace"
+    IDS_EDITOP_INDENT       "Indent"
+    IDS_EDITOP_DRAGDROP     "Drag And Drop"
+    IDS_EDITOP_REPLACE      "Replace"
+    IDS_EDITOP_AUTOINDENT   "Auto Indent"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_VIEW_TABS       "Show or hide tab and space characters"
+    IDS_EDIT_TEXT_NOT_FOUND "Cannot find string""%s"""
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_FIND_PREVIOUS   "Find the previous occurrence of the specified text\nFind Previous"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_TOGGLE_BOOKMARK "Toggle bookmark"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_DELETE          "Erase the selection\nErase (Del)"
+    ID_EDIT_TAB             "Shift selected text to the next tab stop"
+    ID_EDIT_UNTAB           "Shift selected text to the previous tab stop"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_INDICATOR_POSITION "                           "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DYNAMIC_HELP        "Dynamic Help"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#elif !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif
+#include "res\afxresPl.rc"    // Standard components
+#include "res\afxprintPl.rc"  // printing/print preview resources
+#endif
+#if defined(APP_LUA)
+#include "res\LuaResources.rc2"  // non-Microsoft Visual C++ edited resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
